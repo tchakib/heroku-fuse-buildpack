@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
 echo "-----> Installing libfuse2"
 
-cd $1
+#cd $1
 #curl https://raw.githubusercontent.com/kenshin23/fuse-lib/master/fuse_2.9.2.tar.gz -s -O -ssl3
-mkdir -p vendor/fuse
-curl -s https://ftp.osuosl.org/pub/blfs/conglomeration/fuse/fuse-2.9.4.tar.gz -o vendor/fuse/fuse-2.9.4.tar.gz
-tar -xvf  vendor/fuse/fuse-2.9.4.tar.gz -C vendor/fuse
+#mkdir -p vendor/fuse
+#curl -s https://ftp.osuosl.org/pub/blfs/conglomeration/fuse/fuse-2.9.4.tar.gz -o vendor/fuse/fuse-2.9.4.tar.gz
+#tar -xvf  vendor/fuse/fuse-2.9.4.tar.gz -C vendor/fuse
+cd /app/vendor/fuse/fuse-2.9.4 && ./configure --disable-kernel-module
