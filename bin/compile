@@ -7,3 +7,8 @@ mkdir -p vendor/fuse && cd vendor/fuse
 wget https://ftp.osuosl.org/pub/blfs/conglomeration/fuse/fuse-2.9.4.tar.gz
 tar -xvf fuse-2.9.4.tar.gz
 cd fuse-2.9.4 && ./configure --disable-kernel-module
+
+echo "Creating runtime environment"
+PROFILE_PATH="$BUILD_DIR/.profile.d/fuse.sh"
+mkdir -p $(dirname $PROFILE_PATH)
+echo 'export PATH="$PATH:${HOME}/vendor/fuse"' >> $PROFILE_PATH
