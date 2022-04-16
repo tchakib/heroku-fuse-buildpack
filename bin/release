@@ -2,6 +2,6 @@
 cat <<EOF
 ---
 config_vars:
-PATH: $PATH:/app/vendor/fuse/bin
-LD_LIBRARY_PATH: $LD_LIBRARY_PATH:/app/vendor/fuse/lib
+PATH: $PATH:/app/vendor1/fuse/bin
+LD_LIBRARY_PATH: $LD_LIBRARY_PATH:/app/vendor1/fuse/lib
 EOF
