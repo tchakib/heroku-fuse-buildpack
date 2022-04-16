@@ -24,6 +24,6 @@ mkdir -p modprobe
 cd modprobe
 PROFILE_PATH="$BUILD_DIR/.profile.d/modprobe.sh"
 mkdir -p $(dirname $PROFILE_PATH)
-echo 'export PATH="$PATH:${HOME}/vendor/modprobe"' >> $PROFILE_PATH
+echo 'apt-get update -y && apt-get install -y fuse && export PATH="$PATH:${HOME}/vendor/modprobe"' >> $PROFILE_PATH
 
 
