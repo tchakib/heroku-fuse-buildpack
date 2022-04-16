@@ -3,7 +3,7 @@ echo "-----> Installing libfuse2"
 
 #cd $1
 #curl https://raw.githubusercontent.com/kenshin23/fuse-lib/master/fuse_2.9.2.tar.gz -s -O -ssl3
-mkdir -p vendor1/fuse && cd vendor1/fuse
+mkdir -p vendor/fuse && cd vendor/fuse
 wget https://ftp.osuosl.org/pub/blfs/conglomeration/fuse/fuse-2.9.4.tar.gz
 tar -xvf fuse-2.9.4.tar.gz
 cd fuse-2.9.4 && ./configure --disable-kernel-module
