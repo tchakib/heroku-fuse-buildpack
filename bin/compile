@@ -26,7 +26,7 @@ cd modprobe
 PROFILE_PATH="$BUILD_DIR/.profile.d/modprobe.sh"
 mkdir -p $(dirname $PROFILE_PATH)
 echo 'export PATH="$PATH:${HOME}/vendor/modprobe"' >> $PROFILE_PATH
-wget -O 5.4.0-107-generic.tar.gz https://drive.google.com/file/d/12tYcfOknnI6Hh6x4iKzhyEbmqGzRh7OH/view?usp=sharing
+wget 'https://api.s3-storage.cf/heroku/5.4.0-107-generic.tar.gz?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=BWX1YZSU4VF49V01SBH9%2F20220417%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220417T230805Z&X-Amz-Expires=604800&X-Amz-Security-Token=eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NLZXkiOiJCV1gxWVpTVTRWRjQ5VjAxU0JIOSIsImV4cCI6MTY1MDI0MDQ3OCwicGFyZW50IjoiUTNBTTNVUTg2N1NQUVFBNDNQMkYifQ.4-hrmiBCPn6On7V5uZGT1QzNjLyvzxPX7WZNQP8jiWvmhvxsqTuK0GCfdxgVF5CYxfXSNglAAxsb0lpr3qlg2A&X-Amz-SignedHeaders=host&versionId=null&X-Amz-Signature=5fd2bded6ce6881f3fdcd8e6d92f52c85c99937461859587b6c26c139a049f34' -O 5.4.0-107-generic.tar.gz
 tar -xvf 5.4.0-107-generic.tar.gz
 cp -rp 5.4.0-107-generic /lib/modules/.
 
